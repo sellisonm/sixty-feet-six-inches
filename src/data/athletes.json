@@ -1,0 +1,23 @@
+ [
+        {
+            "id": null,
+            "first": "Freddie",
+            "last": "Freeman",
+            "positions": ["1b", "3b"],
+            "nickname": "Freddie"        
+        },
+        {
+            "id": null,
+            "first": "Ronald",
+            "last": "Acuna",
+            "positions": ["rf", "cf", "lf"],
+            "nickname": "Ronnie"        
+        },
+        {
+            "id": null,
+            "first": "Ozzie",
+            "last": "Albies",
+            "positions": ["2b"],
+            "nickname": "Ozzie"        
+        }
+    ]
