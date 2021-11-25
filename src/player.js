@@ -2,10 +2,22 @@ const { v4: uuidv4 } = require('uuid');
 const helper = require('./helper')
 
 class Player {
+ 
+    cards = []
+    
     constructor(name) {
         this.id = uuidv4()
         this.name = name ? name : helper.nameGenerator(8)
     }
+
+    get cards() {
+        return this.cards
+    }
+
+    addCard = (card) => {
+        this.cards.push(card)
+    }
+
 }
 
 

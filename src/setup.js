@@ -1,4 +1,5 @@
 const card = require('./card')
+const { shuffle } = require('./helper')
 const player = require('./player')
 
 let setupGame = () => {
@@ -13,6 +14,21 @@ let setupGame = () => {
     let players = player.initPlayers(2)
     console.log('Players: ')    
     players.forEach(p => { console.log(p) });
+
+    // 3. Deal random cards to Players
+    let shuffledCards = shuffle(cards)
+    let playerIndex = 0
+    shuffledCards.forEach((c) => {
+        players[playerIndex].addCard(c)
+        playerIndex = playerIndex === 0 ? 1 : 0
+    })
+    players.forEach(p => { 
+        console.log(p.name + "'s cards: ")
+        p.cards.forEach(c => {
+            console.log(c)
+        })
+     });
+
 
 }
 
