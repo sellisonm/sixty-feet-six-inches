@@ -19,5 +19,40 @@
             "last": "Albies",
             "positions": ["2b"],
             "nickname": "Ozzie"        
+        },
+        {
+            "id": null,
+            "first": "Austin",
+            "last": "Riley",
+            "positions": ["3b"],
+            "nickname": ""        
+        },
+        {
+            "id": null,
+            "first": "Max",
+            "last": "Fried",
+            "positions": ["sp"],
+            "nickname": ""        
+        },
+        {
+            "id": null,
+            "first": "Luke",
+            "last": "Jackson",
+            "positions": ["rp"],
+            "nickname": ""        
+        },
+        {
+            "id": null,
+            "first": "Dasnby",
+            "last": "Swanson",
+            "positions": ["ss"],
+            "nickname": "Dans"        
+        },
+        {
+            "id": null,
+            "first": "Ian",
+            "last": "Anderson",
+            "positions": ["sp"],
+            "nickname": ""        
         }
     ]
