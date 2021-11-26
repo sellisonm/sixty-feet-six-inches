@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
-const athletes = require('./data/athletes.json')
+const athletes = require('../data/athletes.json')
 
 
 class Card {
