@@ -1,6 +1,8 @@
 const card = require('./card')
 const { shuffle } = require('./helper')
 const player = require('./player')
+const NodeCache = require( "node-cache" );
+const playerCache = new NodeCache();
 
 let setupGame = () => {
 
@@ -13,7 +15,9 @@ let setupGame = () => {
     // 2. Create Players
     let players = player.initPlayers(2)
     console.log('Players: ')    
-    players.forEach(p => { console.log(p) });
+    players.forEach(p => { 
+        console.log(p) 
+    });
 
     // 3. Deal random cards to Players
     let shuffledCards = shuffle(cards)
@@ -22,6 +26,7 @@ let setupGame = () => {
         players[playerIndex].addCard(c)
         playerIndex = playerIndex === 0 ? 1 : 0
     })
+
     players.forEach(p => { 
         console.log(p.name + "'s cards: ")
         p.cards.forEach(c => {
@@ -29,9 +34,14 @@ let setupGame = () => {
         })
      });
 
+     playerCache.set('players', JSON.stringify(players))
+}
 
+let getPlayers = () => {
+    return playerCache.get('players')
 }
 
 module.exports = {
-    setupGame
+    setupGame,
+    getPlayers
 }

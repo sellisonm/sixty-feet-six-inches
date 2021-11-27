@@ -4,8 +4,6 @@ let setupGame = () => {
     setup.setupGame()
 }
 
-
-
 module.exports = {
     setupGame
 }
