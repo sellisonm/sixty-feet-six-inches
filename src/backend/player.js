@@ -8,6 +8,7 @@ class Player {
     constructor(name) {
         this.id = uuidv4()
         this.name = name ? name : helper.nameGenerator(8)
+        this.cards = []
     }
 
     get cards() {

@@ -24,3 +24,8 @@ app.get('/setup', (req, res) => {
     setup.setupGame()
     res.send('Game is ready!')
   })
+
+app.get('/players', (req, res) => {
+    let players = setup.getPlayers()
+    res.send(players)
+})

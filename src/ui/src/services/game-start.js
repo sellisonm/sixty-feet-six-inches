@@ -15,4 +15,18 @@ export default {
         return Promise.reject(err)
     })
   }
+  ,
+  getPlayers() {
+    console.log('calling get players...')
+
+    return axios.get('players')
+    .then(({data}) => {
+        console.log(data)
+            return Promise.resolve(data)
+
+    })
+    .catch((err) => {
+        return Promise.reject(err)
+    })
+  }
 }
