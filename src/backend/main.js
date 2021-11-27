@@ -1,4 +1,11 @@
 const setup = require('./setup')
 
-setup.setupGame()
+let setupGame = () => {
+    setup.setupGame()
+}
 
+
+
+module.exports = {
+    setupGame
+}
