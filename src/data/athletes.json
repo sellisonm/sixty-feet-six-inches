@@ -4,55 +4,106 @@
             "first": "Freddie",
             "last": "Freeman",
             "positions": ["1b", "3b"],
-            "nickname": "Freddie"        
+            "nickname": "Freddie",
+            "rankings": {
+                "ovr": 91,
+                "hit": 94,
+                "fld": 88,
+                "pwr": 87
+            }        
         },
         {
             "id": null,
             "first": "Ronald",
             "last": "Acuna",
             "positions": ["rf", "cf", "lf"],
-            "nickname": "Ronnie"        
+            "nickname": "Ronnie",
+            "rankings": {
+                "ovr": 98,
+                "hit": 96,
+                "fld": 95,
+                "pwr": 96
+            }         
         },
         {
             "id": null,
             "first": "Ozzie",
             "last": "Albies",
             "positions": ["2b"],
-            "nickname": "Ozzie"        
+            "nickname": "Ozzie",
+            "rankings": {
+                "ovr": 90,
+                "hit": 86,
+                "fld": 93,
+                "pwr": 85
+            }         
         },
         {
             "id": null,
             "first": "Austin",
             "last": "Riley",
             "positions": ["3b"],
-            "nickname": ""        
+            "nickname": "",
+            "rankings": {
+                "ovr": 85,
+                "hit": 83,
+                "fld": 80,
+                "pwr": 90
+            }         
         },
         {
             "id": null,
             "first": "Max",
             "last": "Fried",
             "positions": ["sp"],
-            "nickname": ""        
+            "nickname": "" ,
+            "rankings": {
+                "ovr": 92,
+                "cmd": 94,
+                "ctr": 88,
+                "mvm": 91,
+                "vel": 87
+            }   
         },
         {
             "id": null,
             "first": "Luke",
             "last": "Jackson",
             "positions": ["rp"],
-            "nickname": ""        
+            "nickname": "",
+            "rankings": {
+                "ovr": 88,
+                "cmd": 83,
+                "ctr": 84,
+                "mvm": 87,
+                "vel": 82
+            }   
         },
         {
             "id": null,
             "first": "Dasnby",
             "last": "Swanson",
             "positions": ["ss"],
-            "nickname": "Dans"        
+            "nickname": "Dans" ,
+            "rankings": {
+                "ovr": 78,
+                "hit": 71,
+                "fld": 88,
+                "pwr": 72
+            }        
         },
         {
             "id": null,
             "first": "Ian",
             "last": "Anderson",
             "positions": ["sp"],
-            "nickname": ""        
+            "nickname": "",
+            "rankings": {
+                "ovr": 91,
+                "cmd": 94,
+                "ctr": 88,
+                "mvm": 87,
+                "vel": 81
+            }        
         }
     ]
