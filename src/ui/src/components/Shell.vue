@@ -1,15 +1,20 @@
-<template>
+``<template>
   <div class="container">
-    <b-button variant="primary" @click="startGame">Start Game</b-button>
+    <div class="StartButtonLeft">
+      <b-button  variant="primary" @click="startGame">Start Game</b-button>
+    </div>
     <br/>
-    Players:
-    <Player 
-      v-for="player in players"
-      :key="player.id"
-      :player="player"
-     />
+    <div class="row">
+      <div class="col-sm"
+           v-for="player in players"
+           :key="player.id"
+      >
+        <div class="playerDiv">
+          <Player :player="player" />
+        </div>
+      </div>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -42,4 +47,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.StartButtonLeft {
+  float: left;
+}
 </style>
