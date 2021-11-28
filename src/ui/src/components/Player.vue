@@ -1,20 +1,26 @@
 <template>
   <div class="container">
-    Name: {{ player.name }} <br/>
-    Id: {{ player.id }} <br/>
+    Player: {{ player.name }} <br/>
     Cards:
-    <ul id="array-rendering">
-        <li v-for="card in player.cards" :key="card.name">
-            {{ card.firstName }}
-        </li>
-    </ul>
+    <div>
+      <Card 
+        v-for="card in player.cards"
+        :key="card.lastname"
+        :card="card"
+      />
+    </div>
   </div>
 
 </template>
 
 <script>
+import Card from './Card.vue'
+
 export default {
   name: 'Player',
+  components: {
+    Card
+  },
   props: {
       player: {
       type: Object      
