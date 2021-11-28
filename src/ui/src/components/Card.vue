@@ -9,6 +9,7 @@
         <b-card-body v-bind:title="Name">
           <b-card-text>
             <p>Positions: {{ Positions }}</p>
+            <p>Rankings: {{ Rankings }} </p>
           </b-card-text>
         </b-card-body>
       </b-col>
@@ -28,11 +29,21 @@ export default {
     data: function() {
         return {
             Name: this.card.firstName + ' ' + this.card.lastName,
-            Positions: this.card.positions.join(',')
+            Positions: this.card.positions.join(','),
+            Rankings: ''
+        }
+    },
+    methods: {
+        displayRankings: function() {
+            var keysArray = Object.keys(this.card.rankings)
+            keysArray.forEach(r => {
+                this.Rankings += '[' + r + ': ' + this.card.rankings[r] + ']'                
+            });
         }
     },
     mounted() {
         console.log(this.card)
+        this.displayRankings()
     }
 }
 </script>
